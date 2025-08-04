@@ -22,7 +22,7 @@ logo{
  .links{
     display: flex;
     gap: 3rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -32,9 +32,9 @@ logo{
 logo>span{
     padding: 0.75rem;
     font-weight: 700;
-    font-size: 1rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
     background: linear-gradient(to bottom right, #7c3aed, #f97316);
     border-radius: 0.75rem;
     align-items: center;
@@ -271,12 +271,6 @@ contact{
   display: none;
 }
 
-.hamburger {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
 /* Media  Queries*/
 /* ---------------------------------------------------- */
 
@@ -301,6 +295,12 @@ contact{
   .footer {
     gap: 8.5rem;
   }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.15rem;
+  }
 }
 
 
@@ -316,29 +316,19 @@ contact{
     width: 100%;
     display: flex;
     align-items: center;
-  }
-
-  .hamburger {
-    display: block;
-    align-self: flex-end;
+    font-size: 0.75rem;
   }
 
   .links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-    gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1rem;
   }
 
-  /* Show menu when checkbox is checked */
-  .menu-toggle:checked + .hamburger + .links {
-    display: flex;
-  }
 
   .links > p {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
   }
 
   /* Hero / Main Section */
