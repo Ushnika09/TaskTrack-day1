@@ -51,7 +51,7 @@ logo>span{
 
 main{
     background-color:rgba(255, 240, 245, 0.5);
-    min-height: 25rem;
+    height: 35rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +62,7 @@ main{
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 18px;
+    text-align: center;
 }
 .main{
     margin: auto 16rem;
@@ -100,7 +101,7 @@ footer{
     background-color: rgb(70, 68, 68);
     color: white;
     display: flex;
-    padding: 1.5rem 3.5rem;
+    padding: 2.5rem 3.5rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -110,7 +111,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 25rem;
+    gap: 17rem;
 }
 
 .icon>a>img{
@@ -140,7 +141,7 @@ footer{
 #h{
     background-color: rgba(255, 255, 255,0.2);
     height: 0.1px;
-    width: 42rem;
+    width: 32rem;
     border-radius: 2px;
     margin: 1.5rem auto;
 }
@@ -165,6 +166,7 @@ contact{
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 18px;
+    text-align: center;
 }
 .contact{
     margin: auto 16rem;
@@ -201,25 +203,26 @@ contact{
 
 .why{
     background-color: rgba(211, 229, 239, 0.4);
-    height: 45rem;
+    height: 60rem;
     display: flex;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2rem auto;
+    padding: 3.5rem auto;
 }
 
 .why>p{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
+    margin-bottom: 1.5rem;
     
 }
 
 .inner{
-    height: 4rem;
-    width: 4rem;
+    height: 5rem;
+    width: 5rem;
     background-color: #956ab8;
     display: flex;
     justify-content: center;
@@ -238,7 +241,7 @@ contact{
     justify-content:center;
     align-content: space-between;
     border-radius: 10px;
-    padding:1.5rem;
+    padding:2.5rem;
     gap: 25px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
@@ -263,3 +266,150 @@ contact{
     font-weight: 400;
     color: rgb(75, 75, 75);
 }
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Media  Queries*/
+/* ---------------------------------------------------- */
+
+
+@media (max-width: 1024px) {
+  header {
+    padding: 1rem 3rem;
+  }
+
+  .main,
+  .contact {
+    margin: auto 3rem;
+  }
+
+  .why {
+    padding: 2rem;
+  }
+  #h {
+    width: 45%;
+  }
+
+  .footer {
+    gap: 8.5rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  
+  header {
+    align-items: flex-start;
+    padding: 1rem 2rem;
+  }
+
+  .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    align-self: flex-end;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  /* Show menu when checkbox is checked */
+  .menu-toggle:checked + .hamburger + .links {
+    display: flex;
+  }
+
+  .links > p {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  /* Hero / Main Section */
+  .main {
+    margin: 2rem 1rem;
+    text-align: center;
+  }
+
+  #title {
+    font-size: 2.2rem;
+  }
+
+  #tag {
+    font-size: 1.15rem;
+    font-weight: 400;
+  }
+
+  .main > button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  /* Why Section */
+  .why {
+    height: 65rem;
+    padding: 1.5rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .outer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .container {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Contact Section */
+  .contact {
+    margin: 2rem 1rem;
+    text-align: center;
+  }
+
+  #call {
+    font-size: 2rem;
+  }
+
+  #cta {
+    font-size: 1rem;
+  }
+
+  .contact > button {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  #h {
+    width: 25%;
+  }
+}
+
