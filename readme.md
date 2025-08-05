@@ -8,8 +8,7 @@
 
 > **"Stay on Track, Every Day"**
 
-TaskTrack is a fictional task management app that helps users stay organized, track progress, and receive smart reminders — 
-all reflected through a simple, elegant landing page.
+TaskTrack is a fictional task management app that helps users stay organized, track progress, and receive smart reminders — all reflected through a simple, elegant landing page.
 
 ---
 
@@ -46,7 +45,3 @@ This is a personal/educational project. No license applied.
 
 **Made with ❤️ by Ushnika**  
 © 2025 TaskTrack. All rights reserved.
-
-
-## 📁 Folder Structure
-
